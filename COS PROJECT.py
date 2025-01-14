@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 # Dictionary for English to Latin translations
-translation_dict = {
+Latin_dict = {
     "love": "amor",
     "friend": "amicus",
     "sun": "sol",
@@ -24,6 +24,28 @@ translation_dict = {
     "wisdom": "sapientia",
     "beauty": "pulchritudo"
 }
+
+Spanish_dict = {
+    'hola': 'hello',
+    'adiós': 'goodbye',
+    'feliz': 'happy',
+    'gracias': 'thank you',
+    'por favor': 'please',
+    'sí': 'yes',
+    'claro': 'of course',
+    'amor': 'love',
+    'gato': 'cat',
+    'perro': 'dog',
+    'mañana': 'tomorrow',
+    'buenas tardes': 'good afternoon',
+    'buenas noches': 'good evening',
+    'encantado': 'pleased to meet you',
+    'hasta pronto': 'see you soon',
+    'hasta luego': 'see you later',
+    'hasta mañana': 'see you tomorrow',
+    '¿cómo estás?': 'How are you?'
+}
+
 
 # Function to handle translation
 def translate_word():

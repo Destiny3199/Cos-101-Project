@@ -14,23 +14,31 @@ result = StringVar()
 result_label = Label(window, textvariable=result, font=("Comic Sans MS", 14))
 result_label.pack()
 
-Dictionary = {
-    'hola': 'hello',
-    'adiós': 'goodbye',
-    'feliz': 'happy',
-    'gracias': 'thank you',
-    'por favor': 'please',
-    'sí': 'yes',
-    'claro': 'of course',
-    'amor': 'love',
-    'gato': 'cat',
-    'perro': 'dog',
-    'mañana': 'tomorrow',
-    'buenas tardes': 'good afternoon',
-    'buenas noches': 'good evening',
-    'encantado': 'pleased to meet you',
-    'hasta pronto': 'see you soon',
-    'hasta luego': 'see you later',
-    'hasta mañana': 'see you tomorrow',
-    '¿cómo estás?': 'How are you?'
+english_to_portuguese_dict = {
+    "hello": "olá",
+    "goodbye": "adeus",
+    "happy": "feliz",
+    "thank you": "obrigado",
+    "please": "por favor",
+    "yes": "sim",
+    "of course": "claro",
+    "love": "amor",
+    "cat": "gato",
+    "dog": "cachorro",
+    "tomorrow": "amanhã",
+    "good afternoon": "boa tarde",
+    "good evening": "boa noite",
+    "pleased to meet you": "prazer em conhecê-lo",
+    "see you soon": "até logo",
+    "see you later": "até mais tarde",
+    "see you tomorrow": "até amanhã",
+    "how are you?": "como você está?"
 }
+
+# English to Portuguese translation function
+def translate_portuguese():
+    word = entry_word.get().lower()
+    if word in english_to_portuguese_dict:
+        result.set(f"Translation (Portuguese): {english_to_portuguese_dict[word]}")
+    else:
+        result.set("Translation: Not found")

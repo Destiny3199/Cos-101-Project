@@ -12,37 +12,34 @@ result_label = Label(windows, textvariable=result)
 result_label.pack()
 
 
-portuguese_dict = {"ola":"hello",
-                   "amor":"love",
-                   "amigo":"friends",
-                   "casa":"house",
-                   "escola":"school",
-                   "trabalho":"work",
-                   "comida":'food',
-                   "agua":"water",
-                   "sol":"sun",
-                   "lua":"moon",
-                   "livro":'book',
-                   "musica":'music',
-                   "coracao":"heart",
-                   "familia":'family',
-                   "viagem":"travel",
-                   "tempo":"time",
-                   "dinheiro":"money",
-                   "suade":"health",
-                   "falicidade":"happiness",
-                   "esperanca":"hope"
+english_to_portuguese_dict = {
+    "hello": "olá",
+    "goodbye": "adeus",
+    "happy": "feliz",
+    "thank you": "obrigado",
+    "please": "por favor",
+    "yes": "sim",
+    "of course": "claro",
+    "love": "amor",
+    "cat": "gato",
+    "dog": "cachorro",
+    "tomorrow": "amanhã",
+    "good afternoon": "boa tarde",
+    "good evening": "boa noite",
+    "pleased to meet you": "prazer em conhecê-lo",
+    "see you soon": "até logo",
+    "see you later": "até mais tarde",
+    "see you tomorrow": "até amanhã",
+    "how are you?": "como você está?"
 }
 
-def search(word):
-    if word in portuguese_dict:
-        result.set(portuguese_dict[word])
-        print(portuguese_dict[word])
+# English to Portuguese translation function
+def translate_portuguese():
+    word = entry_word.get().lower()
+    if word in english_to_portuguese_dict:
+        result.set(f"Translation (Portuguese): {english_to_portuguese_dict[word]}")
     else:
-        result.set("not found")
-        print("not found")
-search_btn = Button(windows,text="search",command=lambda: search(entry_text.get()))
-search_btn.pack()
+        result.set("Translation: Not found")
 
 windows.mainloop()
 

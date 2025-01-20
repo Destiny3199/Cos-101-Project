@@ -34,15 +34,3 @@ Dictionary = {
     'hasta mañana': 'see you tomorrow',
     '¿cómo estás?': 'How are you?'
 }
-
-def search():
-    word = entry_text.get().lower()
-    if word in Dictionary.keys():
-        result.set(Dictionary[word])
-    else:
-        result.set("Not found")
-
-search_btn = Button(window, text="Search", font=("Times New Roman", 14), command=search)
-search_btn.pack(pady=10)
-
-window.mainloop()

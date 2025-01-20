@@ -1,0 +1,22 @@
+Korean_dictionary = {
+    'really' : 'jinga' ,
+    'yes' : 'dae' ,
+    'no' : 'ani' ,
+    'ok' : 'arasseo' ,
+    'please' : 'jebal' ,
+    'stop' : 'hagima' ,
+    'promise' : 'yagsok' ,
+    'sorry' : 'mianhae' ,
+    'hello' : 'annyeonghaseyo' ,
+    'awesome' : 'daebak' ,
+    'hurry' : 'ppali',
+    'exactly' : 'majayo' ,
+    'thank you' : 'kamsahamnida' ,
+    'friend' : 'chingu' ,
+    'why' : 'waeyo' ,
+    'who' : 'nugu' ,
+    'oh my God' : 'aigoo',
+    'cute' : 'kyeopta' ,
+    'where' : 'eodiseo' ,
+    'what' : 'mwo'
+}

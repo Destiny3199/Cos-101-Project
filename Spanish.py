@@ -41,3 +41,5 @@ def translate_portuguese():
         result.set(f"Translation (Portuguese): {english_to_portuguese_dict[word]}")
     else:
         result.set("Translation: Not found")
+
+windows.mainloop()

@@ -1,3 +1,5 @@
+import tkinter as tk
+
 english_to_korean_dict = {
     "hello": "안녕하세요 (annyeonghaseyo)",
     "goodbye": "안녕히 가세요 (annyeonghi gaseyo)",

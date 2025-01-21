@@ -2,11 +2,24 @@ import tkinter as tk
 from tkinter import ttk
 
 english_to_spanish_dict = {
-    'hello': 'hola', 'goodbye': 'adiós', 'happy': 'feliz', 'thank you': 'gracias',
-    'please': 'por favor', 'yes': 'sí', 'of course': 'claro', 'love': 'amor', 'cat': 'gato',
-    'dog': 'perro', 'tomorrow': 'mañana', 'good afternoon': 'buenas tardes', 'good evening': 'buenas noches',
-    'pleased to meet you': 'encantado', 'see you soon': 'hasta pronto', 'see you later': 'hasta luego',
-    'see you tomorrow': 'hasta mañana', 'how are you?': '¿cómo estás?'
+    'hello': 'hola', 
+    'goodbye': 'adiós', 
+    'happy': 'feliz',
+    'thank you': 'gracias'
+    'please': 'por favor',
+    'yes': 'sí', 
+    'of course': 'claro', 
+    'love': 'amor',
+    'cat': 'gato',
+    'dog': 'perro',
+    'tomorrow': 'mañana', 
+    'good afternoon': 'buenas tardes',
+    'good evening': 'buenas noches',
+    'pleased to meet you': 'encantado',
+    'see you soon': 'hasta pronto',
+    'see you later': 'hasta luego',
+    'see you tomorrow': 'hasta mañana',
+    'how are you?': '¿cómo estás?'
 }
 
 english_to_latin_dict = {

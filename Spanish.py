@@ -35,7 +35,6 @@ english_to_portuguese_dict = {
     "how are you?": "como você está?"
 }
 
-# English to Portuguese translation function
 def translate_portuguese():
     word = entry_word.get().lower()
     if word in english_to_portuguese_dict:

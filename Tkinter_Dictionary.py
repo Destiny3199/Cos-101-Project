@@ -19,11 +19,24 @@ english_to_latin_dict = {
 }
 
 english_to_german_dict = {
-    'hello': 'hallo', 'goodbye': 'auf wiedersehen', 'happy': 'glücklich', 'thank you': 'danke',
-    'please': 'bitte', 'yes': 'ja', 'of course': 'natürlich', 'love': 'liebe', 'cat': 'katze',
-    'dog': 'hund', 'tomorrow': 'morgen', 'good afternoon': 'guten nachmittag', 'good evening': 'guten abend',
-    'pleased to meet you': 'freut mich, dich kennenzulernen', 'see you soon': 'bis bald', 'see you later': 'bis später',
-    'see you tomorrow': 'bis morgen', 'how are you?': 'wie geht's?'
+    'hello': 'hallo',
+    'goodbye': 'auf wiedersehen',
+    'happy': 'glücklich',
+    'thank you': 'danke',
+    'please': 'bitte',
+    'yes': 'ja',
+    'of course': 'natürlich',
+    'love': 'liebe',
+    'cat': 'katze',
+    'dog': 'hund',
+    'tomorrow': 'morgen',
+    'good afternoon': 'guten nachmittag',
+    'good evening': 'guten abend',
+    'pleased to meet you': 'freut mich dich kennenzulernen',
+    'see you soon': 'bis bald',
+    'see you later': 'bis später',
+    'see you tomorrow': 'bis morgen',
+    'how are you?': 'wie geht's?'
 }
 
 english_to_korean_dict = {

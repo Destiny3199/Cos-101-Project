@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-english_to_spanish_dict = {
+spanish_dict = {
     'hello': 'hola', 
     'goodbye': 'adiós', 
     'happy': 'feliz',
@@ -22,16 +22,28 @@ english_to_spanish_dict = {
     'how are you?': '¿cómo estás?'
 }
 
-english_to_latin_dict = {
-    'hello': 'salve', 'goodbye': 'vale', 'happy': 'felix', 'thank you': 'gratias', 'please': 'quaeso',
-    'yes': 'ita vero', 'of course': 'certo', 'love': 'amor', 'cat': 'felis', 'dog': 'canis',
-    'tomorrow': 'cras', 'good afternoon': 'bona vespera', 'good evening': 'bona nox',
+latin_dict = {
+    'hello': 'salve',
+    'goodbye': 'vale',
+    'happy': 'felix', 
+    'thank you': 'gratias',
+    'please': 'quaeso',
+    'yes': 'ita vero',
+    'of course': 'certo', 
+    'love': 'amor',
+    'cat': 'felis',
+    'dog': 'canis',
+    'tomorrow': 'cras', 
+    'good afternoon': 'bona vespera', 
+    'good evening': 'bona nox',
     'pleased to meet you': 'placet te convenire',
-    'see you soon': 'mox videbimus', 'see you later': 'videbimus postea', 'see you tomorrow': 'videbimus cras',
+    'see you soon': 'mox videbimus',
+    'see you later': 'videbimus postea',
+    'see you tomorrow': 'videbimus cras',
     'how are you?': 'quomodo agitur?'
 }
 
-english_to_german_dict = {
+german_dict = {
     'hello': 'hallo',
     'goodbye': 'auf wiedersehen',
     'happy': 'glücklich',
@@ -52,24 +64,45 @@ english_to_german_dict = {
     'how are you?': 'wie gehts?',
 }
 
-english_to_korean_dict = {
-    'hello': '안녕하세요 (annyeonghaseyo)', 'goodbye': '안녕히 가세요 (annyeonghi gaseyo)', 'happy': '행복해요 (haengbokhaeyo)',
-    'thank you': '감사합니다 (kamsahamnida)', 'please': '제발 (jebal)', 'yes': '네 (dae)', 'of course': '물론이죠 (mullonijyo)',
-    'love': '사랑해요 (salanghaeyo)', 'cat': '고양이 (goyangi)', 'dog': '개 (gae)', 'tomorrow': '내일 (naeil)',
-    'good afternoon': '좋은 오후 (joeun ohu)', 'good evening': '좋은 저녁 (joeun jeonyeok)',
+korean_dict = {
+    'hello': '안녕하세요 (annyeonghaseyo)',
+    'goodbye': '안녕히 가세요 (annyeonghi gaseyo)',
+    'happy': '행복해요 (haengbokhaeyo)',
+    'thank you': '감사합니다 (kamsahamnida)',
+    'please': '제발 (jebal)', 'yes': '네 (dae)',
+    'of course': '물론이죠 (mullonijyo)',
+    'love': '사랑해요 (salanghaeyo)',
+    'cat': '고양이 (goyangi)',
+    'dog': '개 (gae)',
+    'tomorrow': '내일 (naeil)',
+    'good afternoon': '좋은 오후 (joeun ohu)',
+    'good evening': '좋은 저녁 (joeun jeonyeok)',
     'pleased to meet you': '만나서 반가워요 (mannaseo bangawoyo)',
-    'see you soon': '곧 봐요 (god bwayo)', 'see you later': '나중에 봐요 (najunge bwayo)',
+    'see you soon': '곧 봐요 (god bwayo)', 
+    'see you later': '나중에 봐요 (najunge bwayo)',
     'see you tomorrow': '내일 봐요 (naeil bwayo)',
     'how are you?': '어떻게 지내세요? (eotteoke jinaeseyo?)'
 }
 
-english_to_portuguese_dict = {
-    'hello': 'olá', 'goodbye': 'adeus', 'happy': 'feliz', 'thank you': 'obrigado', 'please': 'por favor', 'yes': 'sim',
-    'of course': 'claro', 'love': 'amor', 'cat': 'gato', 'dog': 'cachorro', 'tomorrow': 'amanhã',
+portuguese_dict = {
+    'hello': 'olá', 
+    'goodbye': 'adeus',
+    'happy': 'feliz',
+    'thank you': 'obrigado',
+    'please': 'por favor', 
+    'yes': 'sim',
+    'of course': 'claro',
+    'love': 'amor',
+    'cat': 'gato',
+    'dog': 'cachorro',
+    'tomorrow': 'amanhã',
     'good afternoon': 'boa tarde',
-    'good evening': 'boa noite', 'pleased to meet you': 'prazer em conhecê-lo', 'see you soon': 'até logo',
+    'good evening': 'boa noite',
+    'pleased to meet you': 'prazer em conhecê-lo',
+    'see you soon': 'até logo',
     'see you later': 'até mais tarde',
-    'see you tomorrow': 'até amanhã', 'how are you?': 'como você está?'
+    'see you tomorrow': 'até amanhã',
+    'how are you?': 'como você está?'
 }
 
 def translate():

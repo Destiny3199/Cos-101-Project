@@ -36,7 +36,7 @@ english_to_german_dict = {
     'see you soon': 'bis bald',
     'see you later': 'bis später',
     'see you tomorrow': 'bis morgen',
-    'how are you?': 'wie geht's?'
+    'how are you?': 'wie gehts?',
 }
 
 english_to_korean_dict = {

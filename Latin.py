@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Dictionary for English to Latin translations
 english_to_latin_dict = {
     "hello": "salve",
     "goodbye": "vale",
@@ -23,7 +22,6 @@ english_to_latin_dict = {
     "how are you?": "quomodo agitur?"
 }
 
-# English to Latin translation function
 def translate_latin():
     word = entry_word.get().lower()
     if word in english_to_latin_dict:
@@ -31,5 +29,4 @@ def translate_latin():
     else:
         result.set("Translation: Not found")
 
-# Run the Tkinter event loop
 root.mainloop()

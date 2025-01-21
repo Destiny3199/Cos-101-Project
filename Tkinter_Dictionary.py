@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 
-# --- Language Dictionaries ---
 english_to_spanish_dict = {
     'hello': 'hola', 'goodbye': 'adiós', 'happy': 'feliz', 'thank you': 'gracias',
     'please': 'por favor', 'yes': 'sí', 'of course': 'claro', 'love': 'amor', 'cat': 'gato',
@@ -47,8 +46,6 @@ english_to_portuguese_dict = {
     'see you tomorrow': 'até amanhã', 'how are you?': 'como você está?'
 }
 
-
-# --- Translation Function ---
 def translate():
     word = entry_word.get().lower()
     selected_language = language_var.get()
@@ -70,19 +67,16 @@ def translate():
     result.set(translation)
 
 
-# --- Clear Function ---
 def clear_input():
     entry_word.delete(0, tk.END)
     result.set("")
 
 
-# --- Status Bar ---
 def update_status():
     selected_language = language_var.get()
     status_label.config(text=f"Selected language: {selected_language}")
 
 
-# --- UI Layout ---
 window = tk.Tk()
 window.geometry("600x500")
 window.title("Multi-Translator")
@@ -90,11 +84,9 @@ window.title("Multi-Translator")
 header_label = tk.Label(window, text="Multi-Translator", font=("Comic Sans MS", 18))
 header_label.pack(padx=20, pady=20)
 
-# Entry widget for word input
 entry_word = tk.Entry(window, font=("Comic Sans MS", 14), width=30)
 entry_word.pack(pady=10)
 
-# Language selection combobox
 language_var = tk.StringVar()
 language_combobox = ttk.Combobox(window, textvariable=language_var,
                                  values=["Spanish", "Latin", "German", "Korean", "Portuguese"],
@@ -102,24 +94,19 @@ language_combobox = ttk.Combobox(window, textvariable=language_var,
 language_combobox.set("Select Language")  # Default text
 language_combobox.pack(pady=10)
 
-# Buttons to trigger translation
 translate_button = tk.Button(window, text="Translate", font=("Times New Roman", 14), command=translate)
 translate_button.pack(pady=10)
 
 clear_button = tk.Button(window, text="Clear", font=("Times New Roman", 14), command=clear_input)
 clear_button.pack(pady=5)
 
-# Result label
 result = tk.StringVar()
 result_label = tk.Label(window, textvariable=result, font=("Comic Sans MS", 14))
 result_label.pack(pady=20)
 
-# Status Bar
 status_label = tk.Label(window, text="Selected language: None", font=("Comic Sans MS", 12), fg="gray")
 status_label.pack(side="bottom", fill="x")
 
-# Update status bar whenever language selection changes
 language_combobox.bind("<<ComboboxSelected>>", lambda event: update_status())
 
-# Run the main loop
 window.mainloop()

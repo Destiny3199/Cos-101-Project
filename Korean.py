@@ -19,11 +19,12 @@ english_to_korean_dict = {
     "how are you?": "어떻게 지내세요? (eotteoke jinaeseyo?)"
 }
 
-# English to Korean translation function
 def translate_korean():
     word = entry_word.get().lower()
     if word in english_to_korean_dict:
         result.set(f"Translation (Korean): {english_to_korean_dict[word]}")
     else:
         result.set("Translation: Not found")
+
+windows.mainloop()
 

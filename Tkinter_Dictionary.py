@@ -149,7 +149,7 @@ language_var = tk.StringVar()
 language_combobox = ttk.Combobox(window, textvariable=language_var,
                                  values=["Spanish", "Latin", "German", "Korean", "Portuguese"],
                                  font=("Comic Sans MS", 14))
-language_combobox.set("Select Language")  # Default text
+language_combobox.set("Select Language") 
 language_combobox.pack(pady=10)
 
 translate_button = tk.Button(window, text="Translate", font=("Times New Roman", 14), command=translate)

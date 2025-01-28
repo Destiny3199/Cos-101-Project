@@ -111,7 +111,6 @@ def translate():
 
     translation = "Translation: Not found"
 
-    # Get the appropriate dictionary based on language selection
     if selected_language == 'Spanish':
         translation = english_to_spanish_dict.get(word, translation)
     elif selected_language == 'Latin':

@@ -5,7 +5,7 @@ spanish_dict = {
     'hello': 'hola', 
     'goodbye': 'adiós', 
     'happy': 'feliz',
-    'thank you': 'gracias'
+    'thank you': 'gracias',
     'please': 'por favor',
     'yes': 'sí', 
     'of course': 'claro', 
@@ -112,15 +112,15 @@ def translate():
     translation = "Translation: Not found"
 
     if selected_language == 'Spanish':
-        translation = english_to_spanish_dict.get(word, translation)
+        translation = spanish_dict.get(word, translation)
     elif selected_language == 'Latin':
-        translation = english_to_latin_dict.get(word, translation)
+        translation = latin_dict.get(word, translation)
     elif selected_language == 'German':
-        translation = english_to_german_dict.get(word, translation)
+        translation = german_dict.get(word, translation)
     elif selected_language == 'Korean':
-        translation = english_to_korean_dict.get(word, translation)
+        translation = korean_dict.get(word, translation)
     elif selected_language == 'Portuguese':
-        translation = english_to_portuguese_dict.get(word, translation)
+        translation = portuguese_dict.get(word, translation)
 
     result.set(translation)
 
